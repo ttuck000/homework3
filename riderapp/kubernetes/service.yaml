@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: riderapp
+  labels:
+    app: riderapp
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: riderapp
