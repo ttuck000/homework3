@@ -13,6 +13,7 @@ public class 배송확인함 extends AbstractEvent {
     private Long id;
     private String deliveryid;
     private String orderid;
+    private String deliveryaddress;
 
     public 배송확인함(주문 aggregate){
         super(aggregate);

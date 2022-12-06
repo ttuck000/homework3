@@ -11,6 +11,7 @@ public class 배송확인함 extends AbstractEvent {
     private Long id;
     private String deliveryid;
     private String orderid;
+    private String deliveryaddress;
 }
 
 
