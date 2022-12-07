@@ -8,13 +8,11 @@ import java.util.List;
 import lombok.Data;
 import java.util.Date;
 
-
 @Entity
 @Table(name="배송관리_table")
 @Data
 
 public class 배송관리  {
-
 
     
     @Id

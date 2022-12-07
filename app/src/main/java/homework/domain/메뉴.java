@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Date;
 import lombok.Data;
 
-
 @Entity
 @Table(name="메뉴_table")
 @Data

@@ -9,13 +9,11 @@ import java.util.List;
 import lombok.Data;
 import java.util.Date;
 
-
 @Entity
 @Table(name="주문_table")
 @Data
 
 public class 주문  {
-
 
     
     @Id

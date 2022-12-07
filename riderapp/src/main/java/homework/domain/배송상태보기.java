@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Date;
 import lombok.Data;
 
-
 @Entity
 @Table(name="배송상태보기_table")
 @Data

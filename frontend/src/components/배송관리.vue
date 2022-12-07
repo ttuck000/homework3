@@ -35,8 +35,7 @@
                     @click="save"
                     v-else
             >
-                배송수락
-                배송취소
+                Save
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"

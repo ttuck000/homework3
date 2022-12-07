@@ -8,13 +8,11 @@ import java.util.List;
 import lombok.Data;
 import java.util.Date;
 
-
 @Entity
 @Table(name="결제이력_table")
 @Data
 
 public class 결제이력  {
-
 
     
     @Id

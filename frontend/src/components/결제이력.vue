@@ -35,7 +35,7 @@
                     @click="save"
                     v-else
             >
-                결제
+                Save
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"

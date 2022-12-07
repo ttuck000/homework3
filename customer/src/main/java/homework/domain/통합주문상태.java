@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Date;
 import lombok.Data;
 
-
 @Entity
 @Table(name="통합주문상태_table")
 @Data

@@ -35,8 +35,7 @@
                     @click="save"
                     v-else
             >
-                주문
-                주문결제취소
+                Save
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"

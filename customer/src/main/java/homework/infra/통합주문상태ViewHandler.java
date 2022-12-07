@@ -14,6 +14,7 @@ import java.util.Optional;
 @Service
 public class 통합주문상태ViewHandler {
 
+
     @Autowired
     private 통합주문상태Repository 통합주문상태Repository;
 
@@ -55,7 +56,6 @@ public class 통합주문상태ViewHandler {
             e.printStackTrace();
         }
     }
-
 
 }
 

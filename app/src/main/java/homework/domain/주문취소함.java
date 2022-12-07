@@ -5,7 +5,6 @@ import homework.infra.AbstractEvent;
 import java.util.*;
 import lombok.*;
 
-
 @Data
 @ToString
 public class 주문취소함 extends AbstractEvent {
