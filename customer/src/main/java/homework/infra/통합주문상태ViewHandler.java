@@ -48,6 +48,26 @@ public class 통합주문상태ViewHandler {
                 for(통합주문상태 통합주문상태 : 통합주문상태List){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
                     통합주문상태.setDeliverystatus("배송됨");
+                    통합주문상태.setOrderid(String.valueOf(주문됨.getOrderid()));
+                // view 레파지 토리에 save
+                통합주문상태Repository.save(통합주문상태);
+                }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    @StreamListener(KafkaProcessor.INPUT)
+    public void when결제승인됨_then_UPDATE_2(@Payload 결제승인됨 결제승인됨) {
+        try {
+            if (!결제승인됨.validate()) return;
+                // view 객체 조회
+
+                List<통합주문상태> 통합주문상태List = 통합주문상태Repository.findByOrderid(결제승인됨.getOrderid());
+                for(통합주문상태 통합주문상태 : 통합주문상태List){
+                    // view 객체에 이벤트의 eventDirectValue 를 set 함
+                    통합주문상태.setOrderstatus("승인됨");
+                    통합주문상태.setOrderid(결제승인됨.getOrderid());
                 // view 레파지 토리에 save
                 통합주문상태Repository.save(통합주문상태);
                 }
